@@ -16,6 +16,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
+//user details
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -33,6 +37,10 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     MatSlideToggleModule,
     MatInputModule,
+    //details user
+    MatTooltipModule,
+    MatProgressSpinnerModule,
+    MatSelectModule,
   ],
 })
 export class AppMaterialModule {}

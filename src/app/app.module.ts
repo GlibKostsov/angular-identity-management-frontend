@@ -14,10 +14,34 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { LdapDetailComponent } from './ldap-detail/ldap-detail.component';
+//reactive forms
+
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, LdapListComponent, PageNotFoundComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, AppMaterialModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule],
+  declarations: [
+    AppComponent,
+    LdapListComponent,
+    PageNotFoundComponent,
+    NavbarComponent,
+    LdapDetailComponent,
+  ],
+  imports: [
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AppMaterialModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
