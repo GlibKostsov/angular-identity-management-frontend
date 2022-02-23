@@ -4,7 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 import { LdapDetailComponent } from '../ldap-detail/ldap-detail.component';
-import { UsersService } from '../service/users.service';
+import { UsersService } from '../../service/users.service';
 
 @Component({
   selector: 'app-ldap-add',
