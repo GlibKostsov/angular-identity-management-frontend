@@ -51,6 +51,14 @@ export class LdapListComponent implements OnInit {
     this.getUsers();
   }
 
+  addUser() {
+    this.router.navigate(['/user/add']).then((e) => {
+      if (!e) {
+        console.log('Navigation has failed!');
+      }
+    });
+  }
+
   edit(login: string) {
     this.router.navigate(['/user', login]).then((e) => {
       if (!e) {

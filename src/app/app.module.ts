@@ -14,11 +14,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { LdapDetailComponent } from './ldap-detail/ldap-detail.component';
+// import { LdapDetailComponent } from './ldap-detail/ldap-detail.component';
 //reactive forms
 
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LdapEditComponent } from './ldap-edit/ldap-edit.component';
+import { LdapAddComponent } from './ldap-add/ldap-add.component';
+import { AlertComponent } from './share/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     LdapListComponent,
     PageNotFoundComponent,
     NavbarComponent,
-    LdapDetailComponent,
+    // LdapDetailComponent,
+    LdapEditComponent,
+    LdapAddComponent,
+    AlertComponent,
   ],
   imports: [
     ReactiveFormsModule,
