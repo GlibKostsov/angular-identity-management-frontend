@@ -15,6 +15,9 @@ import { MatListModule } from '@angular/material/list';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppMaterialModule } from '../app-material.module';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryUsersService } from '../service/in-memory-users.service';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,11 @@ import { AppMaterialModule } from '../app-material.module';
     MatIconModule,
     MatListModule,
     LdapManagementRoutingModule,
+
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryUsersService, {
+      dataEncapsulation: false,
+    }),
   ],
 })
 export class LdapManagementModule {}

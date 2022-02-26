@@ -14,10 +14,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { LdapManagementModule } from './ldap-management/ldap-management.module';
 import { NavbarComponent } from './ldap-management/navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryUsersService } from './service/in-memory-users.service';
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent, NavbarComponent],
   imports: [
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryUsersService, {
+      dataEncapsulation: false,
+    }),
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
