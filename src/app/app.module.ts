@@ -17,9 +17,10 @@ import { NavbarComponent } from './ldap-management/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryUsersService } from './service/in-memory-users.service';
+import { LoginComponent } from './security/login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, NavbarComponent],
+  declarations: [AppComponent, PageNotFoundComponent, NavbarComponent, LoginComponent],
   imports: [
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryUsersService, {
